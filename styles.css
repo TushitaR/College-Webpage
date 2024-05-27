@@ -68,6 +68,7 @@
     }
 }
 
+
 .salary-info {
     padding: 20px 0;
     border-radius: 10px;
@@ -176,6 +177,7 @@
     margin-bottom: 10px;
 }
 
+
 /* Responsive Styles */
 @media (max-width: 768px) {
     #testimonials h1 {
@@ -273,6 +275,7 @@
     bottom: -10px;
 }
 
+
 .info-section p {
     font-size: 1rem;
     color: #333;
@@ -325,7 +328,9 @@
     font-size: 2.8rem;
     font-weight: 800;
     letter-spacing: 2px;
+    /* border-bottom: 2px solid #6460cd; */
     padding-bottom: 10px;
+    /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);*/
 }
 
 @media (max-width: 768px) {
@@ -694,6 +699,7 @@ footer a:hover {
 
 .placementsimages {
     width: 100%;
+    height: 100%;
 }
 
 @media only screen and (max-width: 768px) {
@@ -719,11 +725,6 @@ footer a:hover {
     .dflex {
         display: flex;
         flex-direction: column;
-    }
-
-    .placementsimages {
-        width: 100%;
-        padding: 9px;
     }
 
     .salary-info {

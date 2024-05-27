@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+
+</head>
+
+<body>
+    <header>
+        <div class="announcementsdiv" style="background-color: #3721ae;">
+            <b class="news-list mt-1 mx-3 announcements">ANNOUNCEMENT<i class="fa-solid fa-bolt"
+                    style="margin-left: 8px;"></i></b>
+            <marquee class="text-white mt-2" style="width: 100%;">Admissions Open for 2024 - 25 <strong>Apply
+                    Now</strong><img src="https://drait.edu.in/assets/images/blinking_new.gif" class="new-gif mx-2 mb-2"
+                    alt="New"> | PG Admissions (MBA) based on PGCET Score | B.E / B.Tech Admissions are Open
+                <strong>Limited Seats Only</strong> <img src="https://drait.edu.in/assets/images/blinking_new.gif"
+                    class="new-gif mx-2 mb-2" alt="New">
+            </marquee>
+        </div>
+        <!-- <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container d-flex">
+                <div class="col-md-3">
+                    <img src="./Images/dbit-logo.jpg" alt="DBIT Logo" class="logo headerlogo">
+                </div>
+                <div class="col-md-6">
+                    <div class="color-animation-container">
+                        <p class="color-animation">CET CODE: E102</p>
+                        <p class="color-animation">COMED-K CODE: E041</p>
+                        <p class="color-animation">PGCET CODE: B163</p>
+                    </div>
+                </div>
+            </div>
+        </nav> -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container navbarcontainer">
+                <div class="col-md-3">
+                    <img src="./Images/dbit-logo.jpg" alt="DBIT Logo" class="logo headerlogo">
+                </div>
+                <div class="col-md-7">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <form class="d-flex" role="search">
+                            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center">
+                                <!-- Added text-center and mx-auto -->
+                                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#aboutus">About Us</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link" href="#specializations">Courses</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link" href="#placements">Placements</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link" href="#testimonials">Testimonials</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#contactus">Contact Us</a>
+                                </li>
+                            </ul>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="background-image-container" id="home">
+        <img src="./Images/don-bosco-study-in.jpg" alt="background Image" class="img-fluid h-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 order-md-2">
+                    <div class="admissions-text">
+                        <p class="ugpg text-white">UG & PG</p>
+                        <p style="color: white;" class="admissionsopen text-white">Admissions Open</p>
+                        <p class="ayear text-white">for 2024 - 25</p>
+                    </div>
+                </div>
+                <div class="col-md-6 order-md-1">
+                    <div class="application-form-container">
+                        <form>
+                            <h2 class="text-center mb-3">Enquiry Form</h2>
+                            <div class="row">
+                                <div class="col-md-12 mb-3">
+                                    <input type="text" id="name" name="name" required class="form-control"
+                                        placeholder="Enter your name">
+                                </div>
+                                <div class="col-md-12 mb-3">
+                                    <input type="email" id="email" name="email" required class="form-control"
+                                        placeholder="Enter your email address">
+                                </div>
+                                <div class="col-md-12 mb-3">
+                                    <div class="input-group">
+                                        <input type="tel" id="phone" name="phone" class="form-control" required
+                                            placeholder="Phone number">
+                                        <button class="btn btn-outline-secondary" type="button">Send OTP</button>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 mb-3">
+                                    <input type="tel" id="otp" name="otp" class="form-control" required
+                                        placeholder="Enter OTP">
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <select id="state" class="form-select" aria-label="Select State"
+                                        onchange="populateCities()">
+                                        <option selected disabled>Select State</option>
+                                        <option value="Andhra Pradesh">Andhra Pradesh</option>
+                                        <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                                        <option value="Assam">Assam</option>
+                                        <option value="Bihar">Bihar</option>
+                                        <option value="Chhattisgarh">Chhattisgarh</option>
+                                        <option value="Goa">Goa</option>
+                                        <option value="Gujarat">Gujarat</option>
+                                        <option value="Haryana">Haryana</option>
+                                        <option value="Himachal Pradesh">Himachal Pradesh</option>
+                                        <option value="Jharkhand">Jharkhand</option>
+                                        <option value="Karnataka">Karnataka</option>
+                                        <option value="Kerala">Kerala</option>
+                                        <option value="Madhya Pradesh">Madhya Pradesh</option>
+                                        <option value="Maharashtra">Maharashtra</option>
+                                        <option value="Manipur">Manipur</option>
+                                        <option value="Meghalaya">Meghalaya</option>
+                                        <option value="Mizoram">Mizoram</option>
+                                        <option value="Nagaland">Nagaland</option>
+                                        <option value="Odisha">Odisha</option>
+                                        <option value="Punjab">Punjab</option>
+                                        <option value="Rajasthan">Rajasthan</option>
+                                        <option value="Sikkim">Sikkim</option>
+                                        <option value="Tamil Nadu">Tamil Nadu</option>
+                                        <option value="Telangana">Telangana</option>
+                                        <option value="Tripura">Tripura</option>
+                                        <option value="Uttar Pradesh">Uttar Pradesh</option>
+                                        <option value="Uttarakhand">Uttarakhand</option>
+                                        <option value="West Bengal">West Bengal</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <select id="city" class="form-select" aria-label="Select City">
+                                        <option selected disabled>Select City</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <select id="course" class="form-select" aria-label="Select Course"
+                                        onchange="updateStreamOptions()">
+                                        <option selected disabled>Select Course</option>
+                                        <option value="be">B.E / B.Tech</option>
+                                        <option value="mba">MBA</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <select id="stream" class="form-select" aria-label="Select Stream">
+                                        <option selected disabled>Select Stream</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="mb-3 d-flex align-items-center">
+                                <input class="form-check-input me-2" type="checkbox" value="" id="terms" required>
+                                <label class="form-check-label" for="terms">
+                                    By filling this form, I agree to receive information and the Terms and Conditions. *
+                                </label>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <button type="button" class="btn btn-outline-primary">Apply Now</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="info-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 info-box">
+                    <img src="./Images/badge.png" class="info-icon" alt="Accreditation Icon">
+                    <h5 class="mt-1">NAAC Accreditation</h5>
+                    <span>DBIT is a private NAAC B+ affiliated college under Visvesvaraya Technological University,
+                        Belagavi.</span>
+                </div>
+                <div class="col-md-3 info-box">
+                    <img src="./Images/institution.png" class="info-icon" alt="Institution Icon">
+                    <h5>Among the Top Private Institutions</h5>
+                    <span>DBIT is ranked Seventeenth among the Best B Schools, Private (Bangalore) in TheWeek-Hansa
+                        Research Survey 2021</span>
+                </div>
+                <div class="col-md-3 info-box">
+                    <img src="./Images/research-and-development.png" class="info-icon" alt="Research Icon">
+                    <h5 class="mt-1">Research Contribution</h5>
+                    <span>DBIT is 1 amongst 350 Premier Educational Institutions (INDIA) to have initiated IRINS Service
+                        to showcase the Research Contributions of the faculty.</span>
+                </div>
+                <div class="col-md-3 info-box">
+                    <img src="./Images/alumni.png" class="info-icon" alt="Alumni Icon">
+                    <h5 class="mt-2">Strong Alumni Network</h5>
+                    <span>With a network of over 14,000 Alumni, DBIT fosters a strong community of past
+                        graduates.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="aboutus py-5" id="aboutus">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="col-md-12">
+                        <h3 class="text-center mb-5" data-aos="fade-up" style="color: black;font-weight: 700;">About Us</h3>
+                    </div>
+                    <div class="aboutus">
+                        <p data-aos="fade-up">Don Bosco Institute of Technology (DBIT), established in 2001 and
+                            affiliated
+                            with VTU, Belagavi, is renowned for its high standards in quality and commitment. DBIT
+                            offers
+                            UG (BE) programs in various engineering disciplines, including Computer Science, Information
+                            Science, Electronics and Communication, Electrical and Electronics, Telecommunication,
+                            Mechanical, and Civil Engineering, along with an MBA program.</p>
+
+                        <p data-aos="fade-up" data-aos-delay="100"><strong>Faculty:</strong> Highly qualified and
+                            experienced faculty members mentor students towards academic excellence and up-to-date
+                            industry
+                            knowledge. They continuously enhance their skills and qualifications.</p>
+
+                        <p data-aos="fade-up" data-aos-delay="200"><strong>Infrastructure:</strong> DBIT boasts
+                            state-of-the-art facilities such as Smart Classrooms, Well-equipped Laboratories, Skill
+                            Development Centre, PLM Training Centre, Kuka Robotics, and several Incubation Centres,
+                            ensuring
+                            a superior learning experience.</p>
+
+                        <p data-aos="fade-up" data-aos-delay="300"><strong>Industry Interaction:</strong> DBIT promotes
+                            industry readiness through training programs, guest lectures, and personality development
+                            initiatives. The institution supports research and innovative activities, encouraging staff
+                            and
+                            students to develop their ideas.</p>
+
+                        <p data-aos="fade-up" data-aos-delay="400"><strong>Placement Cell:</strong> A dedicated Training
+                            and Placement Cell facilitates student recruitment and provides career guidance, with many
+                            top
+                            companies recruiting DBIT graduates.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="accordion" id="accordionExample">
+                        <h3 class="text-center mb-5" data-aos="fade-up" style="color: black;font-weight: 700;">
+                            Achievements
+                        </h3>
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                                <h4 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        DBIT - BIG BRANDS EDUCATION EXCELLENCE AWARD
+                                    </button>
+                                </h4>
+                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        DBIT was awarded by BIG BRANDS with EDUCATION EXCELLENCE AWARD under the
+                                        category of MOST PROMISING UPCOMING PRIVATE ENGINEERING COLLEGE IN KARNATAKA in
+                                        the year 2012.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h4 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Ms. Anagha S - Placed in M/s TARGET with 13.3 LPA
+                                    </button>
+                                </h4>
+                                <div id="collapseTwo" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Ms. Anagha S from the Department of ISE of the batch 2022 has been placed in M/s
+                                        TARGET company with the salary package of 13.3 LPA.
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Add more accordion items here -->
+                            <div class="accordion-item">
+                                <h4 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseFive" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        T&P Department - 650+ Offers Rolled Out
+                                    </button>
+                                </h4>
+                                <div id="collapseFive" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        T&P Department have successfully rolled out 650+ Offers for the batch of 2022 as
+                                        on APRIL 2022.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h4 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseEight" aria-expanded="false"
+                                        aria-controls="collapseEight">
+                                        Mr. Bhushan Hegde - Placed in M/s JUSPAY Company with 27 LPA
+                                    </button>
+                                </h4>
+                                <div id="collapseEight" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Mr. Bhushan Hegde from the Department of ISE of the batch of 2022 has been
+                                        placed in M/s JUSPAY Company with the salary package of 27 LPA.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h4 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseNine" aria-expanded="false"
+                                        aria-controls="collapseNine">
+                                        Spoorthi M - Awarded Uttara Scholarship
+                                    </button>
+                                </h4>
+                                <div id="collapseNine" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Spoorthi M of ECE 2020 batch been awarded the prestigious Uttara Scholarship.
+                                        The scholarship entitles her for two months of comprehensive Java Training
+                                        including extensive lab practical with 100% placement assistance Ref:TPO
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h4 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                        SOLAR POWERED CAR TEAM - 5 Prizes in SAURYA URJA VEHICLE CHAMPIONSHIP
+                                    </button>
+                                </h4>
+                                <div id="collapseSix" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Conducted by Refrangible Society of Technophile Engineers held at Gwalior and
+                                        Won 5 Prizes namely RSTE Future award, Build Quality award, Audience First
+                                        choice award, Team Spirit award, Dhronacharya award (Team Advisor).
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h4 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseSeven" aria-expanded="false"
+                                        aria-controls="collapseSeven">
+                                        GOKART CAR TEAM - 2 Prizes in GOKART CHAMPIONSHIP AT GALGOTIAS UNIVERSITY, Gr.
+                                        NOIDA, 2018
+                                    </button>
+                                </h4>
+                                <div id="collapseSeven" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        The team DBIT-VICKSENS participated in Gokart Championship at GALGOTIAS
+                                        UNIVERSITY,
+                                        Gr. NOIDA on 17th to 20th January 2018 conducted by Imperial Society of
+                                        Innovative
+                                        Engineers (ISIE), INDIA and Won 2 Prizes namely 1st Place in People Choice
+                                        award,
+                                        2nd place in Cross Pad Test.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="specializations py-4" style="background: aliceblue;" id="specializations">
+        <h1 class="text-center mb-5" data-aos="fade-up">Choose from Diverse
+            Specializations</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="text-center section-title" data-aos="fade-up" data-aos-delay="100">UG Programmes - B.E
+                    </h2>
+                    <div class="programmes">
+                        <div class="row">
+                            <div class="col-md-4 ugprogrammes programme-item" data-aos="zoom-in" data-aos-delay="200">
+                                <img src="./Images/Computer Science & Engineering.svg"
+                                    alt="Computer Science & Engineering">
+                                <h6>Computer Science & Engineering</h6>
+                            </div>
+                            <div class="col-md-4 ugprogrammes programme-item" data-aos="zoom-in" data-aos-delay="300">
+                                <img src="./Images/Artificial Intelligence and Machine Learning.svg"
+                                    alt="Artificial Intelligence and Machine Learning">
+                                <h6>Artificial Intelligence and Machine Learning</h6>
+                            </div>
+                            <div class="col-md-4 ugprogrammes programme-item" data-aos="zoom-in" data-aos-delay="400">
+                                <img src="./Images/Artificial Intelligence & Data Science.svg"
+                                    alt="Artificial Intelligence & Data Science">
+                                <h6>Artificial Intelligence & Data Science</h6>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 ugprogrammes programme-item" data-aos="zoom-in" data-aos-delay="500">
+                                <img src="./Images/Information Science & Engineering.svg"
+                                    alt="Information Science & Engineering">
+                                <h6>Information Science & Engineering</h6>
+                            </div>
+                            <div class="col-md-4 ugprogrammes programme-item" data-aos="zoom-in" data-aos-delay="600">
+                                <img src="./Images/Electronics & Communication Engineering.svg"
+                                    alt="Electronics & Communication Engineering">
+                                <h6>Electronics & Communication Engineering</h6>
+                            </div>
+                            <div class="col-md-4 ugprogrammes programme-item" data-aos="zoom-in" data-aos-delay="700">
+                                <img src="./Images/Electrical & Electronics Engineering.svg"
+                                    alt="Electrical & Electronics Engineering">
+                                <h6>Electrical & Electronics Engineering</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h2 class="text-center section-title my-5" data-aos="fade-up" data-aos-delay="800">PG Programmes
+                            - MBA</h2>
+                        <div class="programmes">
+                            <div class="row">
+                                <div class="col-md-3 post-graduate programme-item" data-aos="zoom-in"
+                                    data-aos-delay="900">
+                                    <img src="./Images/digital-marketing_3141158.png"
+                                        alt="Computer Science & Engineering">
+                                    <h6>Marketing</h6>
+                                </div>
+                                <div class="col-md-3 post-graduate programme-item" data-aos="zoom-in"
+                                    data-aos-delay="1000">
+                                    <img src="./Images/finance.png" alt="Artificial Intelligence and Machine Learning">
+                                    <h6>Finance</h6>
+                                </div>
+                                <div class="col-md-3 post-graduate programme-item" data-aos="zoom-in"
+                                    data-aos-delay="1100">
+                                    <img src="./Images/Human Resources.png"
+                                        alt="Artificial Intelligence & Data Science">
+                                    <h6>Human Resources</h6>
+                                </div>
+                                <div class="col-md-3 post-graduate programme-item" data-aos="zoom-in"
+                                    data-aos-delay="1200">
+                                    <img src="./Images/Business Analytics.png"
+                                        alt="Artificial Intelligence & Data Science">
+                                    <h6>Business Analytics (Dual Specialization)</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="placements">
+        <div class="container py-5">
+            <h1 style="font-weight: 700" class="mb-5" data-aos="fade-up">Placements @ <span style="font-weight: 700">Don
+                    Bosco</span></h1>
+            <div class="row justify-content-center">
+                <div class="col-md-5 col-12 info-para">
+                    <p>Join over 150+ top recruiters and benefit from our comprehensive pre-placement training and
+                        career
+                        guidance from the first semester, including industry certifications, mock interviews, and
+                        competitive exam preparation.</p>
+                    <div class="salary-info">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <div class="salary-box text-center">
+                                <p>Highest Salary</p>
+                                <h1 class="animated-number">11</h1>
+                                <span class="lpa">LPA</span>
+                            </div>
+                            <div class="salary-box text-center">
+                                <p>Average Salary</p>
+                                <h1 class="animated-number">5.5</h1>
+                                <span class="lpa">LPA</span>
+                            </div>
+                        </div>
+                        <div class="text-center offer-info">
+                            <h2><span class="animated-number">400+</span> Offers Rolled Out</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-7 col-12">
+                    <img src="./Images/placements.png" alt="" class="placementsimages">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="py-4">
+        <h1 class="text-center mb-4" data-aos="fade-up">Student Testimonials</h1>
+        <div class="wrapper">
+            <div class="testimonial-container" id="testimonial-container"></div>
+            <div class="indicators" id="indicators"></div>
+        </div>
+    </section>
+
+    <div class="container">
+        <h1 class="text-center my-4 styled-heading" data-aos="fade-up">
+            <span class="dbit">Dbit</span> @ <span class="bengaluru">Bengaluru</span>
+        </h1>
+        <div class="google-map mb-5">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.4015510905333!2d77.44201760904708!3d12.881881337372839!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae15754055b99f%3A0xb10a8dc810207db8!2sDon%20Bosco%20Institute%20Of%20Technology!5e0!3m2!1sen!2sin!4v1716459639657!5m2!1sen!2sin"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+    <section id="contactus">
+        <div style="background-color: black;">
+            <div class="container">
+                <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 border-top"
+                    style="background-color: #000000;">
+                    <div class="col-md-4 mb-3">
+                        <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+                            <img src="./Images/Logo_DBIT_2021_Footer.png" alt="DBIT Logo" width="100%">
+                        </a>
+                        <p class="text-white" style="text-align: left;">Mysore Road,
+                            Kumbalagodu, Bangalore - 560074, Karnataka, India.</p>
+                        <div class="footertext">
+                            <span style="margin: 10px 10px 0 0;"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                    height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+                                </svg></span>
+                            <span style="margin-top: 9px;margin-bottom: 0">9900-361-100 or 9972-005-511</span>
+                        </div>
+                        <div class="footertext">
+                            <span style="margin: 10px 10px 0 0;"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                    height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
+                                </svg></span>
+                            <p style="margin-top: 9px;margin-bottom: 0">admissions@donboscobangalore.education</p>
+                        </div>
+                        <div class="footertext">
+                            <span style="margin: 10px 10px 0 0;"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                    height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
+                                </svg></span>
+                            <p style="margin-top: 9px;margin-bottom: 0">admissions@dbit.co.in</p>
+                        </div>
+                        <div class="footertext">
+                            <span style="margin: 10px 10px 0 0;"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                    height="16" fill="currentColor" class="bi bi-globe-central-south-asia"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0M4.882 1.731a.48.48 0 0 0 .14.291.487.487 0 0 1-.126.78l-.291.146a.7.7 0 0 0-.188.135l-.48.48a1 1 0 0 1-1.023.242l-.02-.007a1 1 0 0 0-.462-.04 7 7 0 0 1 2.45-2.027m-3 9.674.86-.216a1 1 0 0 0 .758-.97v-.184a1 1 0 0 1 .445-.832l.04-.026a1 1 0 0 0 .152-1.54L3.121 6.621a.414.414 0 0 1 .542-.624l1.09.818a.5.5 0 0 0 .523.047.5.5 0 0 1 .724.447v.455a.8.8 0 0 0 .131.433l.795 1.192a1 1 0 0 1 .116.238l.73 2.19a1 1 0 0 0 .949.683h.058a1 1 0 0 0 .949-.684l.73-2.189a1 1 0 0 1 .116-.238l.791-1.187A.45.45 0 0 1 11.743 8c.16 0 .306.084.392.218.557.875 1.63 2.282 2.365 2.282l.04-.001a7.003 7.003 0 0 1-12.658.905Z" />
+                                </svg></span>
+                            <p style="margin-top: 9px;margin-bottom: 0">www.dbit.co.in</p>
+                        </div>
+                        <div class="footertext mt-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                style="margin-right: 2rem;" class="bi bi-linkedin" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                style="margin-right: 2rem;" class="bi bi-instagram" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                style="margin-right: 2rem;" class="bi bi-linkedin" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                style="margin-right: 2rem;" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                                <path
+                                    d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="col-md-2 mb-3">
+                        <h5>Our College</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="/about dbit" class="nav-link p-0 text-white">About
+                                    DBIT</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="/governing-council"
+                                    class="nav-link p-0 text-white">Governing
+                                    Council</a></li>
+                            <li class="nav-item mb-2"><a href="/chairman" class="nav-link p-0 text-white">The
+                                    Chairman</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="/committee" class="nav-link p-0 text-white">Committee</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="/visionary" class="nav-link p-0 text-white">Vision &
+                                    Mission</a></li>
+                            <li class="nav-item mb-2"><a href="/accreditations"
+                                    class="nav-link p-0 text-white">Accreditations</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 mb-3">
+                        <h5>Academics</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="/departments"
+                                    class="nav-link p-0 text-white">Departments</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="/courses" class="nav-link p-0 text-white">Courses</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="/admissions"
+                                    class="nav-link p-0 text-white">Admissions</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="/placements"
+                                    class="nav-link p-0 text-white">Placements</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Research</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Academic
+                                    Calendar</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-2 mb-3">
+                        <h5>Facilities</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Library</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Scholarship</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Hostel</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Transportation</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Sports
+                                    Facilities</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Cafeteria</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 mb-3">
+                        <h5>Services</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Health
+                                    Services</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">IT Services</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Student Clubs</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Career
+                                    Counseling</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Alumni Network</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Security</a></li>
+                        </ul>
+                    </div>
+
+                </footer>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p style="margin-bottom: 0;">Copyright © 2024 Don Bosco Institute of Technology. All Rights
+                Reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+        const testimonials = [
+            {
+                name: "Bhushan Hegde",
+                job: "Information Science Student",
+                image: "Images/student-1.jpg",
+                testimonial: "I had immense pleasure studying at Don Bosco Institute of Technology, Bangalore. All the facilities available in this institute are perfect for a student to grab knowledge and skill which are essential to improve oneself. I'm happy I made the decision to join Don Bosco Institute of Technology, Bangalore. I'm thankful for our 'Don Bosco Family' especially for all the faculties of the ISE department and Training and Placement Department for their continuous support and opportunities."
+            },
+            {
+                name: "Anagha Subramanya",
+                job: "Information Science Student",
+                image: "Images/student-2.jpg",
+                testimonial: "The Don Bosco Institute of Technology's department of training and placement makes sure that every student gets an opportunity. From rescheduling the interviews during examinations to always encouraging the students, the training and placement department gives complete 360° support to the students. I am grateful to the Department of Information Science and Engineering as well for always believing in me and motivating me to reach greater heights."
+            },
+            {
+                name: "Jayachandra A S",
+                job: "Electricals and Electronics Student",
+                image: "Images/student-3.jpg",
+                testimonial: "The overall management of the college is doing pretty well. I am satisfied with the culture and practices of the college. I would like to suggest the management to offer extra courses for students to develop their skill sets and insist them much more to concentrate on the placements right from the first semester itself. I believe this helps in increasing the number of students getting placed."
+            },
+            {
+                name: "Anshu Singh",
+                job: "Computer Science Student",
+                image: "Images/student-4.jpg",
+                testimonial: "I am grateful to Don Bosco Institute of Technology for offering a unique combination of learning and self-development. I got all the support and guidance from Faculties and Placement Officers. The events that I took part in helped me to grow my confidence level. I would like to specially thank the placement cell for guiding me and providing me a good platform for my career and also helping me to secure my Placement in QUINNOX."
+            },
+            {
+                name: "Jeevika P Hundekar",
+                job: "Computer Science Student",
+                image: "Images/student-6.jpg",
+                testimonial: "Away from the din of the city, the location of the institute and the hostel within the campus offer the best ambience to study and flourish in the midst of green cover. With spacious and secured rooms, 24/7 Wi-fi connectivity, high quality food and hygienic practices followed, the college hostel is the right place both for stay and peer learning"
+            },
+            {
+                name: "Yogeshwar",
+                job: "Mechanical Student",
+                image: "Images/student-7.jpeg",
+                testimonial: "It is not a surprise to get placed in an IT company for a Mechanical Engineer like me with the right career guidance being imparted by my mentor and the department of training and placement. I would thank the Management, Principal, HOD and TPO for guiding us to cruise through the good and bad times."
+            },
+            {
+                name: "Hardhik Patel",
+                job: "Computer Science Student",
+                image: "Images/student-5.jpg",
+                testimonial: "The DBIT Hostel is a home away from home. The response rate by the warden and other supporting staff for concerns and suggestions is highly appreciable. The care and warmth extended by them cushions the initial feelings of being homesick or so on and eventually it is a place of the big family."
+            },
+        ];
+
+        // Current Slide
+        let i = 0;
+        // Total Slides
+        let j = testimonials.length;
+
+        let testimonialContainer = document.getElementById("testimonial-container");
+        let indicatorsContainer = document.getElementById("indicators");
+
+        const displayTestimonial = () => {
+            testimonialContainer.innerHTML = `
+                <div class="testimonial-content">
+                    <img src="${testimonials[i].image}" alt="${testimonials[i].name}">
+                    <div class="testimonial-text">
+                        <p>${testimonials[i].testimonial}</p>
+                        <h3>${testimonials[i].name}</h3>
+                        <h6>${testimonials[i].job}</h6>
+                    </div>
+                </div>
+            `;
+            updateIndicators();
+        };
+
+        const updateIndicators = () => {
+            indicatorsContainer.innerHTML = '';
+            for (let k = 0; k < j; k++) {
+                let indicator = document.createElement('div');
+                indicator.classList.add('indicator');
+                if (k === i) {
+                    indicator.classList.add('active');
+                }
+                indicator.addEventListener('click', () => {
+                    i = k;
+                    displayTestimonial();
+                });
+                indicatorsContainer.appendChild(indicator);
+            }
+        };
+
+        window.onload = () => {
+            displayTestimonial();
+            setInterval(() => {
+                i = (i + 1) % j;
+                displayTestimonial();
+            }, 5000); // Change slide every 5 seconds
+        };
+
+        function scrollCarousel() {
+            const carouselContent = document.querySelector('.carousel-content');
+            const firstItem = carouselContent.children[0];
+            const itemHeight = firstItem.offsetHeight;
+
+            carouselContent.style.transform = `translateY(-${itemHeight}px)`;
+
+            setTimeout(() => {
+                carouselContent.appendChild(firstItem);
+                carouselContent.style.transition = 'none';
+                carouselContent.style.transform = 'translateY(0)';
+                setTimeout(() => {
+                    carouselContent.style.transition = 'transform 0.5s ease';
+                });
+            }, 5000); // Change the delay (in milliseconds) to control the scroll speed
+        }
+
+        // Call the scrollCarousel function when the document is loaded
+        document.addEventListener('DOMContentLoaded', () => {
+            scrollCarousel();
+            setInterval(scrollCarousel, 6000); // Adjust interval as needed
+        });
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+</body>
+
+</html>

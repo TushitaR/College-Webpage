@@ -1,0 +1,1186 @@
+/* Apply animation to the admissions-text container */
+.admissions-text {
+    position: absolute;
+    top: 39%;
+    left: 5%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    z-index: 10;
+    animation: slideInFromLeft 1s ease forwards;
+}
+
+.logocards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Card styles */
+.card {
+    flex: 0 0 auto;
+    width: 150px;
+    height: auto;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.card img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.lpa {
+    font-size: 38px;
+    color: darkred;
+    font-weight: 700;
+}
+
+@media only screen and (max-width: 435px) {
+    .application-form-container {
+        min-height: 63%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .navbarcontainer {
+        display: block !important;
+    }
+
+    .aboutusdiv {
+        flex-direction: column;
+    }
+
+
+    .post-graduate {
+        margin-bottom: 1.5rem !important;
+    }
+
+    .form-select {
+        width: 100%;
+    }
+
+    .navbar-nav {
+        margin: auto;
+        display: table;
+        table-layout: auto;
+        float: none;
+    }
+
+    .dflex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .placementsimages {
+        width: 100%;
+        padding: 9px;
+    }
+
+    .ugpg {
+        font-size: 3rem;
+    }
+
+    .salary-info {
+        padding: 0;
+    }
+
+    .info-para p {
+        font-size: large;
+        font-family: sans-serif;
+        padding-right: 1rem !important;
+        padding-left: 1rem !important;
+    }
+
+    .admissionsopen {
+        font-size: 3rem;
+        word-wrap: break-word;
+        white-space: normal;
+    }
+
+    .ayear {
+        font-size: 1.7rem;
+    }
+
+    .bannerimage {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dropdowndiv {
+        height: auto;
+    }
+
+    .application-form-container {
+        top: 34%;
+        left: 50%;
+        transform: translateX(-50%);
+        right: auto;
+        bottom: 10%;
+        height: 60%;
+    }
+
+    .admissions-text {
+        top: 7%;
+        left: 9%;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+
+    .announcements {
+        width: 45%;
+    }
+
+    .background-image-container {
+        min-height: 210vh;
+    }
+
+    .footertext {
+        display: flex;
+    }
+
+    footer .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .headerlogo {
+        height: auto;
+        width: 70%;
+        margin-left: 55px;
+        margin-bottom: 12px;
+        margin-top: 6px;
+    }
+
+    .announcementsdiv {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .announcements {
+        width: 45%;
+        height: 30px;
+    }
+
+    .color-animation {
+        margin-bottom: 10px !important;
+    }
+}
+
+@media only screen and (max-width: 435px) {
+    .admissions-text {
+        top: 3%;
+        font-size: 18px;
+        line-height: 1.2;
+    }
+
+    .admissionsopen {
+        font-size: 2rem;
+    }
+
+    .ayear {
+        font-size: 1.2rem;
+    }
+}
+
+
+.salary-info {
+    padding: 20px 0;
+    border-radius: 10px;
+}
+
+.salary-box {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    margin: 0 10px;
+}
+
+.salary-box p {
+    font-size: 1.3rem;
+    color: black;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.salary-box h1 {
+    font-size: 2.5rem;
+    color: #3900ff;
+    font-weight: 700;
+    margin: 0;
+}
+
+.offer-info {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.offer-info h2 {
+    font-size: 3rem;
+    color: #41bf5e;
+    font-weight: 700;
+    margin: 0;
+}
+
+.programmes {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.section-title {
+    color: #b833a4;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+.ugprogrammes {
+    padding: 15px;
+    flex: 1 0 33.3333%;
+    box-sizing: border-box;
+    border-right: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.ugprogrammes:nth-child(3n) {
+    border-right: none;
+}
+
+.row:nth-child(2) .ugprogrammes {
+    border-bottom: none;
+}
+
+.programme-item {
+    text-align: center;
+}
+
+.programme-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.post-graduate {
+    text-align: center;
+    border-right: 1px solid #e0e0e0;
+    /* Apply border to all items */
+}
+
+.post-graduate:last-child {
+    border-right: none;
+    /* Remove border from the last item */
+}
+
+.post-graduate img {
+    height: 85px;
+    width: 99px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .col-md-4 {
+        flex: 1 0 50%;
+        border-right: none;
+        border-bottom: 1px solid #e0e0e0;
+    }
+
+    .col-md-4:nth-child(2n) {
+        border-right: none;
+    }
+
+    .row:nth-child(2) .col-md-4 {
+        border-bottom: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .col-md-4 {
+        flex: 1 0 100%;
+        border-right: none;
+        border-bottom: 1px solid #e0e0e0;
+    }
+
+    .row .col-md-4 {
+        border-bottom: 1px solid #e0e0e0;
+    }
+
+    .row:last-child .col-md-4 {
+        border-bottom: none;
+    }
+}
+
+@keyframes next1 {
+    from {
+        left: 0%;
+    }
+
+    to {
+        left: -100%;
+    }
+}
+
+@keyframes next2 {
+    from {
+        left: 100%;
+    }
+
+    to {
+        left: 0%;
+    }
+}
+
+@keyframes prev1 {
+    from {
+        left: 0%;
+    }
+
+    to {
+        left: 100%;
+    }
+}
+
+@keyframes prev2 {
+    from {
+        left: -100%;
+    }
+
+    to {
+        left: 0%;
+    }
+}
+
+.info-section {
+    background-color: #fdecd8;
+    padding: 15px;
+}
+
+.info-para {
+    font-size: large;
+    font-family: sans-serif;
+}
+
+#placements h1::after {
+    content: '';
+    width: 100px;
+    height: 4px;
+    background: #6460cd;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10px;
+}
+
+
+.info-section p {
+    font-size: 1rem;
+    color: #333;
+}
+
+.salary-info {
+    /* background: #f8f9fa; */
+    padding: 20px 0;
+    border-radius: 10px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+.salary-info .salary-box {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    margin: 0 10px;
+}
+
+.salary-info .salary-box p {
+    font-size: 1.3rem;
+    color: black;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.salary-info .salary-box h1 {
+    font-size: 3.5rem;
+    color: #3900ff;
+    font-weight: 700;
+}
+
+.salary-info .offer-info {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.animated-number {
+    color: #a72887;
+    font-weight: 800;
+    font-size: 3rem;
+}
+
+#placements h1 {
+    padding: 0;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    /* border-bottom: 2px solid #6460cd; */
+    padding-bottom: 10px;
+    /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);*/
+}
+
+@media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+        width: 100%;
+    }
+
+    .info-box {
+        flex: 0 0 48%;
+        margin-bottom: 20px;
+    }
+
+    .salary-info .d-flex {
+        flex-direction: column;
+        /* gap: 20px; */
+    }
+
+    .salary-info .salary-box {
+        margin: 10px 0;
+    }
+
+    .salary-info .offer-info {
+        margin-top: 0;
+    }
+
+    #placements h2 {
+        padding-right: 1rem !important;
+        font-size: 2.3rem;
+        padding-left: 1rem !important;
+    }
+}
+
+.ugpg {
+    font-size: 3.5rem;
+}
+
+.ayear {
+    font-size: 3.8rem;
+    color: #df4957;
+}
+
+.admissionsopen {
+    font-size: 3.8rem;
+}
+
+.bannerimage {
+    display: flex;
+}
+
+.navbar-nav .dropdown-menu .dropdown-item:hover {
+    background-color: #739adf;
+    color: white;
+}
+
+.dropdowndiv {
+    height: 56px;
+    padding: 10px;
+    background-color: #92d192;
+}
+
+.application-form-container {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+    border-radius: 8px;
+    padding: 20px;
+    /* Higher than background image */
+}
+
+.info-box {
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Center the content horizontally */
+    text-align: center;
+    /* Center the text */
+}
+
+.info-box img.info-icon {
+    width: 3.8rem;
+    margin-bottom: 10px;
+    /* Space between the image and the heading */
+}
+
+.info-box h5 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 15px;
+}
+
+.info-box span {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+}
+
+@media (max-width: 576px) {
+    .info-box {
+        flex: 0 0 100%;
+    }
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Apply animation to the admissions-text container */
+.admissions-text {
+    position: absolute;
+    top: 39%;
+    left: 5%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    z-index: 10;
+    animation: slideInFromLeft 1s ease forwards;
+}
+
+.admissions-text p {
+    margin-bottom: 0;
+    font-size: 3rem;
+    color: #d69033;
+}
+
+/* footer */
+footer {
+    background: #3c3a3a;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    overflow-x: hidden;
+}
+
+.footertext {
+    display: flex;
+}
+
+footer .container {
+    width: calc(100% - 30px);
+    /* Adjusted width to accommodate padding */
+    max-width: 1200px;
+    margin: 0 auto;
+    /* Center align the container */
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* Allow items to wrap */
+}
+
+footer li {
+    margin: 0 10px;
+}
+
+footer a {
+    color: #77d1f6;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+.background-image-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.background-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.application-form-container {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 90%;
+    padding: 20px;
+    /* Added padding bottom to avoid overlapping with the footer */
+}
+
+.application-form-container .card {
+    background: transparent;
+    border: none;
+    padding: 1.3rem;
+}
+
+.headerlogo {
+    height: auto;
+    width: 100%;
+}
+
+.announcementsdiv {
+    display: flex;
+    background-color: #3721ae;
+}
+
+.announcements {
+    width: 15%;
+    color: white;
+}
+
+.dflex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.placementsimages {
+    width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+    .post-graduate {
+        margin-bottom: 1.5rem !important;
+    }
+
+    .form-select {
+        width: 100%;
+    }
+
+    .navbar-nav {
+        margin: auto;
+        display: table;
+        table-layout: auto;
+        float: none;
+    }
+
+    .dflex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .placementsimages {
+        width: 100%;
+        padding: 9px;
+    }
+
+    .ugpg {
+        font-size: 3rem;
+    }
+
+    .salary-info {
+        padding: 0;
+    }
+
+    .info-para p {
+        font-size: large;
+        font-family: sans-serif;
+        padding-right: 1rem !important;
+        padding-left: 1rem !important;
+    }
+
+    .admissionsopen {
+        font-size: 3rem;
+        word-wrap: break-word;
+        /* Ensures long words break and wrap */
+        white-space: normal;
+        /* Ensures text wraps properly */
+    }
+
+    .ayear {
+        font-size: 1.7rem;
+    }
+
+    .bannerimage {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dropdowndiv {
+        height: auto;
+    }
+
+    .application-form-container {
+        top: 34%;
+        left: 50%;
+        transform: translateX(-50%);
+        right: auto;
+        bottom: 10%;
+        height: 60%;
+    }
+
+    .admissions-text {
+        top: 8%;
+        left: 6%;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+
+    .announcements {
+        width: 45%;
+    }
+
+    .background-image-container {
+        min-height: 210vh;
+    }
+
+    .footertext {
+        display: flex;
+    }
+
+    footer .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .headerlogo {
+        height: auto;
+        width: 70%;
+        margin-left: 55px;
+        margin-bottom: 12px;
+        margin-top: 6px;
+    }
+
+    .announcementsdiv {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .announcements {
+        width: 51%;
+        height: 30px;
+    }
+
+    .color-animation {
+        margin-bottom: 10px !important;
+    }
+}
+
+.color-animation-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.color-animation {
+    margin-bottom: 0;
+    padding: 6px;
+    animation: colorChange 3s infinite alternate;
+    font-weight: bold;
+    color: #fff;
+    /* Initial text color */
+}
+
+@keyframes colorChange {
+    0% {
+        background-color: #1e90ff;
+        /* Initial background color */
+    }
+
+    50% {
+        background-color: #32cd32;
+        /* Background color in the middle of animation */
+    }
+
+    100% {
+        background-color: #1e90ff;
+        /* Background color at the end of animation */
+    }
+}
+
+.nav-item a {
+    color: #32cd32;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.google-map {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    /* 16:9 Aspect Ratio */
+    height: 0;
+    overflow: hidden;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.google-map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: 10px;
+}
+
+.styled-heading {
+    font-size: 2.5rem;
+    color: #333;
+    letter-spacing: 1px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.styled-heading::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #a2156a;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.styled-heading .dbit {
+    color: #a2156a;
+    font-weight: 700
+}
+
+.styled-heading .bengaluru {
+    color: #9acd32;
+    font-weight: 700
+}
+
+/* aboutus */
+.aboutus {
+    background: #fff;
+}
+
+.aboutus h3 {
+    font-size: 2rem;
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.accordion-header button {
+    color: #6460cd;
+    font-weight: 700;
+}
+
+.aboutus h3::after {
+    content: '';
+    width: 100px;
+    height: 4px;
+    background: #6460cd;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10px;
+}
+
+.aboutus p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 15px;
+    padding: 0 15px;
+}
+
+.aboutus strong {
+    color: #333;
+}
+
+
+@keyframes next1 {
+    from {
+        left: 0%;
+    }
+
+    to {
+        left: -100%;
+    }
+}
+
+@keyframes next2 {
+    from {
+        left: 100%;
+    }
+
+    to {
+        left: 0%;
+    }
+}
+
+@keyframes prev1 {
+    from {
+        left: 0%;
+    }
+
+    to {
+        left: 100%;
+    }
+}
+
+@keyframes prev2 {
+    from {
+        left: -100%;
+    }
+
+    to {
+        left: 0%;
+    }
+}
+
+@media(max-width: 768px) {
+    .aboutus h1 {
+        font-size: 2.1rem;
+    }
+
+    .aboutus p {
+        font-size: 1.2rem;
+    }
+}
+
+.specializations h1 {
+    color: black;
+    font-weight: 700;
+}
+
+#testimonials h1 {
+    color: black;
+    font-weight: 700;
+    font-size: 2.6rem;
+}
+
+.specializations h1::after {
+    content: '';
+    width: 100px;
+    height: 4px;
+    background: #6460cd;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10px;
+}
+
+#testimonials h1::after {
+    content: '';
+    width: 100px;
+    height: 4px;
+    background: #6460cd;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10px;
+}
+
+/* ----------------------- */
+#testimonials {
+    background-image: url("./Images/shape30.webp");
+}
+
+.wrapper {
+    width: 90vw;
+    max-width: 50em;
+    border-radius: 0.6em;
+    display: flex;
+    position: relative;
+    padding: 2em;
+    margin: 2em auto;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimonial-container {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.testimonial-container .testimonial-content {
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+    transition: transform 0.3s ease-in-out;
+}
+
+.testimonial-container .testimonial-text {
+    flex: 1;
+}
+
+.testimonial-container .testimonial-text p {
+    color: #333;
+    font-size: 1.1rem;
+    line-height: 1.6em;
+    text-align: justify;
+    letter-spacing: 0.05em;
+    margin-bottom: 1em;
+}
+
+.testimonial-container img {
+    border-radius: 50%;
+    width: 7em;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-container h3 {
+    color: #0a69ed;
+    font-size: 1.8rem;
+    margin-bottom: 0.2em;
+}
+
+.testimonial-container h6 {
+    color: #999;
+    font-size: 1.1rem;
+    letter-spacing: 0.03em;
+    font-weight: 400;
+}
+
+.indicators {
+    display: flex;
+    justify-content: center;
+    gap: 0.5em;
+}
+
+.indicator {
+    height: 0.8em;
+    width: 0.8em;
+    background-color: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.indicator.active {
+    background-color: #0a69ed;
+}
+
+@media screen and (max-width: 650px) {
+    .wrapper {
+        padding: 1em;
+    }
+
+    .testimonial-container .testimonial-content {
+        flex-direction: column;
+    }
+
+    .testimonial-container img {
+        margin-bottom: 1em;
+        width: 6em;
+    }
+
+    .testimonial-container .testimonial-text p {
+        font-size: 1rem;
+        line-height: 1.4em;
+    }
+
+    .testimonial-container h3 {
+        font-size: 1.5rem;
+    }
+
+    .testimonial-container h6 {
+        font-size: 1rem;
+    }
+}
+
+.carousel-container {
+    width: 300px;
+    height: 400px;
+    /* Adjust height as needed */
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+}
+
+
+/* Styling for the carousel content */
+.carousel-content {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 0.5s ease;
+}
+
+/* Styling for individual achievement items */
+.achievement-item {
+    width: 250px;
+    height: 185px;
+    background-color: #f0f0f0;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+/* Styling for achievement item icon */
+.achievement-icon {
+    font-size: 24px;
+    margin-right: 10px;
+}

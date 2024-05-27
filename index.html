@@ -97,88 +97,84 @@
                     </div>
                 </div>
                 <div class="col-md-6 order-md-1">
-                    <div class="application-form-container">
-                        <form>
-                            <h2 class="text-center mb-3">Enquiry Form</h2>
-                            <div class="row">
-                                <div class="d-flex">
-                                    <div class="col-md-6 mb-3">
+                    <div class="container mt-5">
+                        <div class="application-form-container">
+                            <form>
+                                <h2 class="text-center mb-3">Enquiry Form</h2>
+                                <div class="row">
+                                    <div class="col-md-6 col-6 mb-3">
                                         <input type="text" id="name" name="name" required class="form-control"
                                             placeholder="Enter your name">
                                     </div>
-                                    <div class="col-md-6 mb-3">
+                                    <div class="col-md-6 col-6 mb-3">
                                         <input type="email" id="email" name="email" required class="form-control"
                                             placeholder="Enter your email id">
                                     </div>
                                 </div>
-                                <div class="col-md-12 mb-3">
+                                <div class="mb-3">
                                     <div class="input-group">
                                         <input type="tel" id="phone" name="phone" class="form-control" required
                                             placeholder="Phone number">
                                         <button class="btn btn-outline-secondary" type="button">Send OTP</button>
                                     </div>
                                 </div>
-                                <div class="col-md-12 mb-3">
-                                    <input type="tel" id="otp" name="otp" class="form-control" required
-                                        placeholder="Enter OTP">
+                                <div class="mb-3">
+                                    <input type="tel" id="otp" name="otp" class="form-control" required placeholder="Enter OTP">
                                 </div>
-                               
-                                <div class="col-md-6 mb-3">
-                                    <select id="state" class="form-select" aria-label="Select State"
-                                    onchange="populateCities()">
-                                    <option selected disabled>Select State</option>
-                                    <option value="Andhra Pradesh">Andhra Pradesh</option>
-                                    <option value="Arunachal Pradesh">Arunachal Pradesh</option>
-                                    <option value="Assam">Assam</option>
-                                    <option value="Bihar">Bihar</option>
-                                    <option value="Chhattisgarh">Chhattisgarh</option>
-                                    <option value="Goa">Goa</option>
-                                    <option value="Gujarat">Gujarat</option>
-                                    <option value="Haryana">Haryana</option>
-                                    <option value="Himachal Pradesh">Himachal Pradesh</option>
-                                    <option value="Jharkhand">Jharkhand</option>
-                                    <option value="Karnataka">Karnataka</option>
-                                    <option value="Kerala">Kerala</option>
-                                    <option value="Madhya Pradesh">Madhya Pradesh</option>
-                                    <option value="Maharashtra">Maharashtra</option>
-                                    <option value="Manipur">Manipur</option>
-                                    <option value="Meghalaya">Meghalaya</option>
-                                    <option value="Mizoram">Mizoram</option>
-                                    <option value="Nagaland">Nagaland</option>
-                                    <option value="Odisha">Odisha</option>
-                                    <option value="Punjab">Punjab</option>
-                                    <option value="Rajasthan">Rajasthan</option>
-                                    <option value="Sikkim">Sikkim</option>
-                                    <option value="Tamil Nadu">Tamil Nadu</option>
-                                    <option value="Telangana">Telangana</option>
-                                    <option value="Tripura">Tripura</option>
-                                    <option value="Uttar Pradesh">Uttar Pradesh</option>
-                                    <option value="Uttarakhand">Uttarakhand</option>
-                                    <option value="West Bengal">West Bengal</option>
-                                </select>
+                                <div class="row">
+                                    <div class="col-md-6 col-6 mb-3">
+                                        <select id="state" class="form-select" aria-label="Select State" onchange="populateCities()">
+                                            <option selected disabled>Select State</option>
+                                            <option value="Andhra Pradesh">Andhra Pradesh</option>
+                                            <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                                            <option value="Assam">Assam</option>
+                                            <option value="Bihar">Bihar</option>
+                                            <option value="Chhattisgarh">Chhattisgarh</option>
+                                            <option value="Goa">Goa</option>
+                                            <option value="Gujarat">Gujarat</option>
+                                            <option value="Haryana">Haryana</option>
+                                            <option value="Himachal Pradesh">Himachal Pradesh</option>
+                                            <option value="Jharkhand">Jharkhand</option>
+                                            <option value="Karnataka">Karnataka</option>
+                                            <option value="Kerala">Kerala</option>
+                                            <option value="Madhya Pradesh">Madhya Pradesh</option>
+                                            <option value="Maharashtra">Maharashtra</option>
+                                            <option value="Manipur">Manipur</option>
+                                            <option value="Meghalaya">Meghalaya</option>
+                                            <option value="Mizoram">Mizoram</option>
+                                            <option value="Nagaland">Nagaland</option>
+                                            <option value="Odisha">Odisha</option>
+                                            <option value="Punjab">Punjab</option>
+                                            <option value="Rajasthan">Rajasthan</option>
+                                            <option value="Sikkim">Sikkim</option>
+                                            <option value="Tamil Nadu">Tamil Nadu</option>
+                                            <option value="Telangana">Telangana</option>
+                                            <option value="Tripura">Tripura</option>
+                                            <option value="Uttar Pradesh">Uttar Pradesh</option>
+                                            <option value="Uttarakhand">Uttarakhand</option>
+                                            <option value="West Bengal">West Bengal</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6 col-6 mb-3">
+                                        <select id="city" class="form-select" aria-label="Select City">
+                                            <option selected disabled>Select City</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6 col-6 mb-3">
+                                        <select id="course" class="form-select" aria-label="Select Course" onchange="updateStreamOptions()">
+                                            <option selected disabled>Select Course</option>
+                                            <option value="be">B.E / B.Tech</option>
+                                            <option value="mba">MBA</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6 col-6 mb-3">
+                                        <select id="stream" class="form-select" aria-label="Select Stream">
+                                            <option selected disabled>Select Stream</option>
+                                        </select>
+                                    </div>
                                 </div>
-                                <div class="col-md-6 mb-3">
-                                    <select id="city" class="form-select" aria-label="Select City">
-                                        <option selected disabled>Select City</option>
-                                    </select>
-                                </div>
-                                <div class="col-md-6 mb-3">
-                                    <select id="course" class="form-select" aria-label="Select Course"
-                                        onchange="updateStreamOptions()">
-                                        <option selected disabled>Select Course</option>
-                                        <option value="be">B.E / B.Tech</option>
-                                        <option value="mba">MBA</option>
-                                    </select>
-                                </div>
-                                <div class="col-md-6 mb-3">
-                                    <select id="stream" class="form-select" aria-label="Select Stream">
-                                        <option selected disabled>Select Stream</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="d-flex">
-                                    <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
                                         <div class="input_field captch_box">
                                             <input type="text" value="" disabled />
                                             <button class="refresh_button">
@@ -186,24 +182,21 @@
                                             </button>
                                         </div>
                                     </div>
-                                    <div class="col-md-6">
-                                        <div class="input_field captch_input">
-                                            <input type="text" placeholder="Enter captcha" />
-                                        </div>
+                                    <div class="col-md-6 mb-3">
+                                        <input type="text" placeholder="Enter captcha" class="form-control" />
                                     </div>
                                 </div>
-                                <div class="message">Entered captcha is correct</div>
-                            </div>
-                            <div class="d-flex align-items-center">
-                                <input class="form-check-input me-2" type="checkbox" value="" id="terms" required>
-                                <label class="form-check-label" for="terms">
-                                    By filling this form, I agree to receive information and the Terms and Conditions. *
-                                </label>
-                            </div>
-                            <div class="d-flex justify-content-center">
-                                <button type="button" class="btn btn-outline-primary">Apply Now</button>
-                            </div>
-                        </form>
+                                <div class="mb-3 d-flex align-items-center">
+                                    <input class="form-check-input me-2" type="checkbox" value="" id="terms" required>
+                                    <label class="form-check-label" for="terms">
+                                        By filling this form, I agree to receive information and the Terms and Conditions. *
+                                    </label>
+                                </div>
+                                <div class="d-flex justify-content-center">
+                                    <button type="button" class="btn btn-outline-primary">Apply Now</button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>

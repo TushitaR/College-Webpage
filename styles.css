@@ -1,14 +1,17 @@
 /* Apply animation to the admissions-text container */
-.admissions-text {
-    position: absolute;
-    top: 39%;
-    left: 5%;
-    transform: translateY(-50%);
-    color: white;
-    font-size: 24px;
-    font-weight: bold;
-    z-index: 10;
-    animation: slideInFromLeft 1s ease forwards;
+.divider {
+    border-left: 1px solid #ccc;
+    height: 100%;
+}
+
+@media (max-width: 767.98px) {
+    .divider {
+        border-left: none;
+        border-top: 2px solid #ccc;
+        height: auto;
+        width: 100%;
+        margin: 1rem 0;
+    }
 }
 
 .logocards {
@@ -50,134 +53,6 @@
     .application-form-container {
         min-height: 63%;
     }
-}
-
-@media only screen and (max-width: 768px) {
-    .navbarcontainer {
-        display: block !important;
-    }
-
-    .aboutusdiv {
-        flex-direction: column;
-    }
-
-
-    .post-graduate {
-        margin-bottom: 1.5rem !important;
-    }
-
-    .form-select {
-        width: 100%;
-    }
-
-    .navbar-nav {
-        margin: auto;
-        display: table;
-        table-layout: auto;
-        float: none;
-    }
-
-    .dflex {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .placementsimages {
-        width: 100%;
-        padding: 9px;
-    }
-
-    .ugpg {
-        font-size: 3rem;
-    }
-
-    .salary-info {
-        padding: 0;
-    }
-
-    .info-para p {
-        font-size: large;
-        font-family: sans-serif;
-        padding-right: 1rem !important;
-        padding-left: 1rem !important;
-    }
-
-    .admissionsopen {
-        font-size: 3rem;
-        word-wrap: break-word;
-        white-space: normal;
-    }
-
-    .ayear {
-        font-size: 1.7rem;
-    }
-
-    .bannerimage {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .dropdowndiv {
-        height: auto;
-    }
-
-    .application-form-container {
-        top: 34%;
-        left: 50%;
-        transform: translateX(-50%);
-        right: auto;
-        bottom: 10%;
-        height: 63%;
-    }
-
-    .admissions-text {
-        top: 7%;
-        left: 9%;
-        transform: translateX(-50%);
-        text-align: center;
-    }
-
-    .announcements {
-        width: 45%;
-    }
-
-    .background-image-container {
-        min-height: 210vh;
-    }
-
-    .footertext {
-        display: flex;
-    }
-
-    footer .container {
-        width: 100%;
-        padding: 0 10px;
-    }
-
-    .headerlogo {
-        height: auto;
-        width: 70%;
-        margin-left: 55px;
-        margin-bottom: 12px;
-        margin-top: 6px;
-    }
-
-    .announcementsdiv {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .announcements {
-        width: 45%;
-        height: 30px;
-    }
-
-    .color-animation {
-        margin-bottom: 10px !important;
-    }
-}
-
-@media only screen and (max-width: 435px) {
     .admissions-text {
         top: 3%;
         font-size: 18px;
@@ -192,7 +67,6 @@
         font-size: 1.2rem;
     }
 }
-
 
 .salary-info {
     padding: 20px 0;
@@ -302,9 +176,11 @@
     margin-bottom: 10px;
 }
 
-
 /* Responsive Styles */
 @media (max-width: 768px) {
+    #testimonials h1 {
+        font-size: 2rem !important;
+    }
     .col-md-4 {
         flex: 1 0 50%;
         border-right: none;
@@ -397,17 +273,14 @@
     bottom: -10px;
 }
 
-
 .info-section p {
     font-size: 1rem;
     color: #333;
 }
 
 .salary-info {
-    /* background: #f8f9fa; */
     padding: 20px 0;
     border-radius: 10px;
-    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
 }
 
 .salary-info .salary-box {
@@ -452,12 +325,129 @@
     font-size: 2.8rem;
     font-weight: 800;
     letter-spacing: 2px;
-    /* border-bottom: 2px solid #6460cd; */
     padding-bottom: 10px;
-    /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);*/
 }
 
 @media (max-width: 768px) {
+
+    .navbarcontainer {
+        display: block !important;
+    }
+
+    .aboutusdiv {
+        flex-direction: column;
+    }
+
+
+    .post-graduate {
+        margin-bottom: 1.5rem !important;
+    }
+
+    .form-select {
+        width: 100%;
+    }
+
+    .navbar-nav {
+        margin: auto;
+        display: table;
+        table-layout: auto;
+        float: none;
+    }
+
+    .dflex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ugpg {
+        font-size: 3rem;
+    }
+
+    .salary-info {
+        padding: 0;
+    }
+
+    .info-para p {
+        font-size: large;
+        font-family: sans-serif;
+        padding-right: 1rem !important;
+        padding-left: 1rem !important;
+    }
+
+    .admissionsopen {
+        font-size: 3rem;
+        word-wrap: break-word;
+        white-space: normal;
+    }
+
+    .ayear {
+        font-size: 1.7rem;
+    }
+
+    .bannerimage {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dropdowndiv {
+        height: auto;
+    }
+
+    .application-form-container {
+        top: 34%;
+        left: 50%;
+        transform: translateX(-50%);
+        right: auto;
+        bottom: 10%;
+        height: 63%;
+    }
+
+    .admissions-text {
+        top: 7%;
+        left: 9%;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+
+    .announcements {
+        width: 45%;
+    }
+
+    .background-image-container {
+        min-height: 210vh;
+    }
+
+    .footertext {
+        display: flex;
+    }
+
+    footer .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .headerlogo {
+        height: auto;
+        width: 70%;
+        margin-left: 55px;
+        margin-bottom: 12px;
+        margin-top: 6px;
+    }
+
+    .announcementsdiv {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .announcements {
+        width: 45%;
+        height: 30px;
+    }
+
+    .color-animation {
+        margin-bottom: 10px !important;
+    }
+
     body {
         overflow-x: hidden;
         width: 100%;
@@ -707,6 +697,10 @@ footer a:hover {
 }
 
 @media only screen and (max-width: 768px) {
+    #placements h1 {
+        font-size: 2rem;
+    }
+
     .post-graduate {
         margin-bottom: 1.5rem !important;
     }
@@ -730,10 +724,6 @@ footer a:hover {
     .placementsimages {
         width: 100%;
         padding: 9px;
-    }
-
-    .ugpg {
-        font-size: 3rem;
     }
 
     .salary-info {
@@ -817,10 +807,6 @@ footer a:hover {
     .announcements {
         width: 51%;
         height: 30px;
-    }
-
-    .color-animation {
-        margin-bottom: 10px !important;
     }
 }
 
@@ -1184,6 +1170,7 @@ footer a:hover {
     font-size: 24px;
     margin-right: 10px;
 }
+
 /* ----------------------- */
 
 .input_field {

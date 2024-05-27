@@ -127,7 +127,7 @@
         transform: translateX(-50%);
         right: auto;
         bottom: 10%;
-        height: 60%;
+        height: 63%;
     }
 
     .admissions-text {
@@ -157,7 +157,7 @@
     .headerlogo {
         height: auto;
         width: 70%;
-        margin-left: 55px;
+        /* margin-left: 55px; */
         margin-bottom: 12px;
         margin-top: 6px;
     }
@@ -646,7 +646,7 @@ footer a:hover {
 .background-image-container {
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 132vh;
     overflow: hidden;
     z-index: 1;
 }
@@ -692,7 +692,7 @@ footer a:hover {
 }
 
 .announcements {
-    width: 15%;
+    width: 19%;
     color: white;
 }
 
@@ -804,7 +804,7 @@ footer a:hover {
     .headerlogo {
         height: auto;
         width: 70%;
-        margin-left: 55px;
+        /* margin-left: 55px; */
         margin-bottom: 12px;
         margin-top: 6px;
     }
@@ -1183,4 +1183,89 @@ footer a:hover {
 .achievement-icon {
     font-size: 24px;
     margin-right: 10px;
+}
+/* ----------------------- */
+
+
+header {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.input_field {
+    position: relative;
+    height: 45px;
+    width: 100%;
+}
+
+.refresh_button {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    background: #826afb;
+    height: 30px;
+    width: 30px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.refresh_button:active {
+    transform: translateY(-50%) scale(0.98);
+}
+
+.input_field input,
+.button button {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+}
+
+.input_field input {
+    padding: 0 15px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.captch_box input {
+    color: #6b6b6b;
+    font-size: 22px;
+    pointer-events: none;
+}
+
+.captch_input input:focus {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08);
+}
+
+.message {
+    font-size: 14px;
+    margin: 14px 0;
+    color: #826afb;
+    display: none;
+}
+
+.message.active {
+    display: block;
+}
+
+.button button {
+    background: #826afb;
+    color: #fff;
+    cursor: pointer;
+    user-select: none;
+}
+
+.button button:active {
+    transform: scale(0.99);
+}
+
+.button.disabled {
+    opacity: 0.6;
+    pointer-events: none;
 }
